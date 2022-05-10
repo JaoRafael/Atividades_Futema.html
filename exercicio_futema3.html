@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+<script>
+	
+function enter(){
+	document.write("<br>");
+	//pula uma linha
+}
+
+function mostra(frase){
+	document.write(frase);
+	enter();
+}
+
+function calculaSoma(numero1, numero2){
+  	return numero1 + numero2;
+}
+
+function calculaDivisao(numero1,numero2){
+	return (numero1 / numero2);
+}
+
+function calculaMultiplicacao(numero1,numero2){
+	return (numero1 * numero2); 
+}
+
+function calculaSubtracao(numero1,numero2){
+	return (numero1 - numero2);
+}
+
+
+var nome = prompt("Olá, para começar digite seu nome:");
+var n1 = parseInt(Math.round(prompt(nome + " Vamos fazer um cálculo, Informe dois números inteiros. Digite o primeiro numero:")));
+var n2 = parseInt(Math.round(prompt(nome + " Agora digite um segundo número:"))); 
+// parseInt serve para transformar string em número!!
+// se não colocar parseInt em uma var que recebe um número, ele recebera esse número como uma string, ex 90+90, resulta em 9090
+var operacao = prompt(nome + " agora digite a operação desejada  + ,  / , * , - ");
+var soma = calculaSoma(n1 , n2);
+var divisao = calculaDivisao(n1 , n2);
+var multiplicacao = calculaMultiplicacao(n1 , n2);
+var subtracao = calculaSubtracao(n1 , n2);
+
+
+if(operacao == "+"){
+	mostra(nome + " O resultado da soma é " + soma );
+}
+
+if(operacao == "/"){
+	mostra(nome + " O resultado da divisão é " + divisao );
+}
+
+if(operacao == "*"){
+	mostra(nome + " O resultado da multiplicação é " + multiplicacao);
+}
+
+if(operacao == "-"){
+	mostra(nome + " O resultado da subtração é " + subtracao);
+}
+
+
+</script>
