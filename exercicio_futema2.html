@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script>
+	
+function enter(){
+	document.write("<br>");
+	//pula uma linha
+}
+
+function mostra(frase){
+	document.write(frase);
+	enter();
+}
+
+var n1 = parseInt(prompt("Digite sua primeira nota"));
+var n2 = parseInt(prompt("Digite sua segunda nota"));
+var n3 = parseInt(prompt("Digite sua terceira nota"));
+var n4 = parseInt(prompt("Digite sua quarta nota"));
+
+var resultado = (n1 + n2 + n3 + n4)/4;
+
+if(resultado > 7 && resultado <= 10){
+	mostra("Parabéns você está aprovado!");
+} 
+if(resultado == 6){
+	mostra("Você está de exame... não desanime!!");
+}
+ if(resultado < 6){
+	mostra("Que pena, vc está reprovado...");
+}
+ if(resultado >= 11){
+ 	mostra("!!NOTA INVÁLIDA!!");
+ }
+
+</script>
